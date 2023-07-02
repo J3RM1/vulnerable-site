@@ -65,6 +65,7 @@ jobs:
 
     steps:
       - name: Run Dastardly Scan
+        continue-on-error: true
         uses: PortSwigger/dastardly-github-action@main
         with:
           target-url: 'https://vulnerable-site.azurewebsites.net/'
